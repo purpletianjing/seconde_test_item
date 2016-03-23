@@ -5,7 +5,7 @@ function thousands_separators(n) {
   // var pattern = /(-?\d+)(\d{3})/;
   // while (pattern.test(x))
   //     x = x.replace(pattern, "$1,$2");
-  var parts=n.toString().split("c");
+  var parts=n.toString().split(".");
     return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (parts[1] ? "." + parts[1] : "");
 }
 
